@@ -9,18 +9,18 @@
   <link rel="stylesheet" href="css/screen.css">
 </head>
 <body> 
-  <form class="form" method="POST" action="">
-    <input type="text" id="first-number" class="display display--first-number" value="">
-    <input type="text" id="second-number" class="display display--second-number" value="">
+  <div class="form">
+    <p><input type="text" id="first-number" class="display display--first-number"></p>
+    <input type="text" id="second-number" class="display display--second-number">
     <div class="keys__operations">
-      <button class="button button__operations" id="devision()">/</button>
-      <button class="button button__operations" id="multiplication()">*</button>
-      <button class="button button__operations" id="deletion()">c</button>
-      <button class="button button__operations" id="subtraction()">-</button>
+      <button class="button button__operations" onclick="devision()">/</button>
+      <button class="button button__operations" onclick="multiplication()">*</button>
+      <button class="button button__operations" onclick="deletion()">c</button>
+      <button class="button button__operations" onclick="subtraction()">-</button>
       <button class="button button__operations" onclick="addition()">+</button>
     </div>
     <p class="result-number" id="result-number">Результат:</p>
-  </form>
+  </div>
   <script src="js/script.js"></script>
 </body>
 </html>
