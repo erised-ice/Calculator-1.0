@@ -16,6 +16,7 @@
   margin-bottom: 15px;
   background:  linear-gradient(to bottom right, #fffd8e  36%, #fffc56 100%);
   border: none;
+  font-family: 'Major Mono Display', monospace;
 }
 
 .keys__inner {

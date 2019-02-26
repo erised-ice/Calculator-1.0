@@ -1,16 +1,8 @@
-const $buttonsDigitCollection = document.querySelectorAll('.js-button-digit');
-function getValue($something) {
-    return $something.value;
-};
-
-const $inputDisplay = document.querySelector('.js-display');
-
-let $operand1 = $inputDisplay.value;
-$buttonsDigitCollection.forEach(function($element) {
-    $element.addEventListener('click', function(event) {
-        event.preventDefault();
-        $inputDisplay.value += getValue($element);
-    });
-});
-
-console.log($operand1);
+function addition() {
+    var numberOne, numberTwo;
+    numberOne = document.getElementById('first-number').value;
+    numberTwo = document.getElementById('second-number').value;
+    result = numberOne + numberTwo;
+    document.getElementById('result-number').innerHTML = result;
+    console.log(result);
+}
