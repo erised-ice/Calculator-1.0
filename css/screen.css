@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Major+Mono+Display');
 
-.form {
+.main {
   padding: 20px;
   background:  linear-gradient(to top left, #b6f147 36%, #87f52d 100%);
   width: 100%;
@@ -19,16 +19,8 @@
   font-family: 'Major Mono Display', monospace;
 }
 
-.keys__inner {
-  display: flex;
-  justify-content: space-between;
-}
-
-.keys__digits {
-  display: flex;
-  flex-wrap: wrap-reverse;
-  justify-content: space-between;
-  margin-right: 10px;
+.display--result {
+  background: linear-gradient(to bottom right, #ffed32  36%, #f5e531 100%)
 }
 
 .button {
@@ -46,13 +38,8 @@
   outline: none;
 }
 
-.keys__operations {
+.buttons {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-
-.button__enter {
-  display: block;
-  width: 115px;
 }
