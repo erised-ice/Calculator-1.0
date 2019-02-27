@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Major+Mono+Display');
 
+body {
+  font-family: 'Major Mono Display', monospace;
+}
+
 .main {
   padding: 20px;
   background:  linear-gradient(to top left, #b6f147 36%, #87f52d 100%);
@@ -8,6 +12,7 @@
   margin: 15px auto;
   box-shadow: #b6f147;
   box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  border-radius: 3px;
 }
 
 .display {
@@ -16,7 +21,7 @@
   margin-bottom: 15px;
   background:  linear-gradient(to bottom right, #fffd8e  36%, #fffc56 100%);
   border: none;
-  font-family: 'Major Mono Display', monospace;
+  border-radius: 3px;
 }
 
 .display--result {
@@ -31,7 +36,7 @@
   background: yellow;
   background:  linear-gradient(to bottom right, #fdfa21  26%, #eeff00 60%, #d7f33b 90%);
   border: none;
-  font-family: 'Major Mono Display', monospace;
+  border-radius: 3px;
 }
 
 .button:focus {
