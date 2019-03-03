@@ -1,16 +1,60 @@
-const $buttonsDigitCollection = document.querySelectorAll('.js-button-digit');
-function getValue($something) {
-    return $something.value;
-};
+var numberOne = null;
+var numberTwo = null;
 
-const $inputDisplay = document.querySelector('.js-display');
+function getInputValue(id) {
+    return document.getElementById(id).value;
+}
 
-let $operand1 = $inputDisplay.value;
-$buttonsDigitCollection.forEach(function($element) {
-    $element.addEventListener('click', function(event) {
-        event.preventDefault();
-        $inputDisplay.value += getValue($element);
-    });
-});
+function stringToNumber(string) {
+    return string = +string;
+}
 
-console.log($operand1);
+function output(result) {
+    document.getElementById('display-result').value = result;
+}
+
+function addition() {
+    var inputValueOne = getInputValue('first-num');
+    var inputValueTwo = getInputValue('second-num');
+
+    numberOne = stringToNumber(inputValueOne);
+    numberTwo = stringToNumber(inputValueTwo);
+
+    output(numberOne + numberTwo);
+}
+
+function subtraction() {
+    var inputValueOne = getInputValue('first-num');
+    var inputValueTwo = getInputValue('second-num');
+
+    numberOne = stringToNumber(inputValueOne);
+    numberTwo = stringToNumber(inputValueTwo);
+
+    output(numberOne - numberTwo);
+}
+
+function multiplication() {
+    var inputValueOne = getInputValue('first-num');
+    var inputValueTwo = getInputValue('second-num');
+
+    numberOne = stringToNumber(inputValueOne);
+    numberTwo = stringToNumber(inputValueTwo);
+
+    output(numberOne * numberTwo);
+}
+
+function devision() {
+    var inputValueOne = getInputValue('first-num');
+    var inputValueTwo = getInputValue('second-num');
+
+    numberOne = stringToNumber(inputValueOne);
+    numberTwo = stringToNumber(inputValueTwo);
+
+    output(numberOne / numberTwo);
+}
+
+function deletion() {
+    document.getElementById('first-num').value = '';
+    document.getElementById('second-num').value = '';
+    output('');
+}
